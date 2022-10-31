@@ -53,7 +53,7 @@ def run_br_serie_a(br_serie_a_odds_df: pd.DataFrame) -> pd.DataFrame:
         min_surebet = br_serie_a_probs_df['total_prob_value'].min().round(4)
         logger.info(f'No surebets founded. Best prob value: {min_surebet}')
     else:
-        logger.info(f'Surebets founded! {surebet_counts} surebets.')
+        logger.info(f'SUREBETS FOUNDED! {surebet_counts} surebets.')
 
     logger.info(br_serie_a_probs_df.nsmallest(3, ['total_prob_value']).loc[:, ['game_id', 'total_prob_value']])
 
