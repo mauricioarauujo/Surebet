@@ -1,0 +1,11 @@
+br_serie_a_odds_df:
+  type: pandas.ParquetDataSet
+  filepath: data/03_primary/br_serie_a_odds_df.parquet
+  layer: primary
+
+br_serie_a_probs_df:
+  type: pandas.ParquetDataSet
+  filepath: data/07_model_output/br_serie_a_probs_df.parquet
+  versioned: true
+  layer: output
+
