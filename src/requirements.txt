@@ -12,12 +12,12 @@ pytest-cov~=3.0
 pytest-mock>=1.7.1, <2.0
 pytest~=6.2
 scikit-learn~=1.0
-pandas
-numpy
-selenium
-matplotlib
-seaborn
-Unidecode
-autopep8
-click
-colorlog
+pandas==1.5.1
+numpy==1.23.4
+selenium==4.5.0
+matplotlib==3.6.0
+seaborn==0.12.1
+Unidecode==1.3.6
+autopep8==1.5.7
+click==8.1.3
+colorlog==6.7.0
