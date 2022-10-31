@@ -8,21 +8,31 @@ Após instalar qualquer ambiente conda, digite no seu terminal:
 
 ~~~~~~~~~~~~~~~~~~~~~~~
    (base) $ git clone https://github.com/mauricioarauujo/Surebet.git
-   (base) $ conda create -n {env_name} python==3.8.2
+   (base) $ conda create -n {env_name} python==3.9
    (base) $ conda activate {env_name} 
    ({env_name}) $ pip install -r requirements.txt
-   ({env_name}) $ pip install -e .
    
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Running
 
-Para rodagem, já existe um ambiente pronto ontem basta rodar em seu terminal:
+Para rodagem, já existe um ambiente pronto (kedro) onde para rodar o pipeline principal basta rodar em seu terminal:
 
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-  ({env_name}) $ python run.py task tasks {nome_da_task}
+  ({env_name}) $ kedro run
 
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Tais tasks estarão em src/tasks
+Para rodagem de outros pipelines basta digitar:
+
+~~~~~~~~~~~~~~~~~~~~~~~
+
+  ({env_name}) $ kedro run -p {nome_do_pipeline}
+   
+   Ex: # gerar surebets para o futebol brasileiro serie A
+   ({env_name}) $ kedro run -p br_serie_a 
+   
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Tais pipelines estarão em src/surebet/pipeline_registry.py
