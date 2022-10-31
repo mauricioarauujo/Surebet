@@ -4,8 +4,8 @@ br_serie_a_odds_df:
   layer: primary
 
 br_serie_a_probs_df:
-  type: pandas.ParquetDataSet
-  filepath: data/07_model_output/br_serie_a_probs_df.parquet
+  type: pandas.ExcelDataSet
+  filepath: data/07_model_output/br_serie_a_probs_df.xlsx
   versioned: true
   layer: output
 
