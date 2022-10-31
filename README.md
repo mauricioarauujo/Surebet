@@ -50,4 +50,4 @@ Exemplo de output para a Serie A do Futebol Brasileiro:
 
 ![image](https://user-images.githubusercontent.com/58861384/199051772-e82cbd5f-af6e-4ed6-b4d7-642fee4ac0a1.png)
 
-No campo "total_prob_value" quando há um valor menor que 1 verificamos a existência de uma surebet e aí avaliamos as outras colunas para saber como prosseguir com a aposta.
+No campo "total_prob_value", quando há um valor menor que 1, confirmamos a existência de uma surebet. A partir disso avaliamos as outras colunas para saber como prosseguir com tal aposta.
