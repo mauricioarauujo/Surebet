@@ -4,11 +4,16 @@ Projeto com intuito de treinar web scrapping. Para diferentes casas de apostas s
 
 ### Setup
 
-Após instalar qualquer ambiente conda, digite no seu terminal:
+Tal projeto fará uso do Selenium, logo, é necessário instalar tanto o Selenium quanto seus webdrivers.
+
+Segue o link para tutorial: https://selenium-python.readthedocs.io/installation.html
+
+Será necessário também um gerenciador de ambiente. No exemplo abaixo é utilizado o conda mas pode ser qualquer outro de sua escolha.
+Exemplo de criação de ambiente com conda:
 
 ~~~~~~~~~~~~~~~~~~~~~~~
    (base) $ git clone https://github.com/mauricioarauujo/Surebet.git
-   (base) $ conda create -n {env_name} python==3.9
+   (base) $ conda create -n {env_name} python==3.9 
    (base) $ conda activate {env_name} 
    ({env_name}) $ pip install -r requirements.txt
    
@@ -36,3 +41,5 @@ Para rodagem de outros pipelines basta digitar:
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Tais pipelines estarão em src/surebet/pipeline_registry.py
+
+Os arquivos serão salvos localmente em suas devidas camadas (raw, output, etc.) dentro do diretório data/.
