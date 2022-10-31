@@ -1,6 +1,6 @@
 # Surebet
 
-Projeto com intuito de treinar web scrapping. Para diferentes casas de apostas são retiradas as odds para determinadas partidas através de um web scraping. A partir destas diferentes odds é verificada a existência de uma "surebet" que é quando tais odds te garantem um retorno positivo indepedente do resultado.
+Projeto para procurar por surebets em diferentes casas de apostas. Para diferentes casas de apostas são retiradas as odds para determinadas partidas através de um web scraping. A partir destas diferentes odds é verificada a existência de uma "surebet" que é quando tais odds te garantem um retorno positivo indepedente do resultado.
 
 ### Setup
 
@@ -21,7 +21,7 @@ Exemplo de criação de ambiente com conda:
 
 ### Running
 
-Para rodagem, já existe um ambiente pronto (kedro) onde para rodar o pipeline principal basta rodar em seu terminal:
+Para rodagem, já existe um ambiente pronto (kedro). Para rodar o pipeline principal, por exemplo, basta digitar em seu terminal:
 
 ~~~~~~~~~~~~~~~~~~~~~~~
 
