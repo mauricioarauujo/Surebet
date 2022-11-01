@@ -13,7 +13,7 @@ Exemplo de criação de ambiente com conda:
 
 ~~~~~~~~~~~~~~~~~~~~~~~
    (base) $ git clone https://github.com/mauricioarauujo/Surebet.git
-   (base) $ conda create -n {env_name} python==3.9 
+   (base) $ conda create -n {env_name} python==3.9.13
    (base) $ conda activate {env_name} 
    ({env_name}) $ pip install -r requirements.txt
    
