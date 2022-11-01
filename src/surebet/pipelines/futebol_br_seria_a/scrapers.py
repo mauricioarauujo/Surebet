@@ -32,20 +32,22 @@ def get_betway_odds_br_serie_a():
                     value = base_xpath + f'/div[{day}]/div[2]/div/div[{game}]'
                 ).text
 
-                _, game_name, odd_mandante, odd_empate, odd_visitante = text_game.split('\n')
-                clubs = [unidecode(club.strip()).lower().replace(' ', '_') for club in game_name.split('-')]
-                game_id = '-'.join(sorted(clubs))
-                mandante = clubs[0]
-                visitante = clubs[1]
+                if len(text_game.split('\n')) == 5:
+                    _, game_name, odd_mandante, odd_empate, odd_visitante = text_game.split('\n')
+                    clubs = [unidecode(club.strip()).lower().replace(' ', '_') for club in game_name.split('-')]
+                    game_id = '-'.join(sorted(clubs))
+                    mandante = clubs[0]
+                    visitante = clubs[1]
 
 
 
-                games_ids.append(game_id)
-                mandantes.append(mandante)
-                visitantes.append(visitante)
-                odds_mandantes.append(float(odd_mandante.replace(',', '.')))
-                odds_empates.append(float(odd_empate.replace(',', '.')))
-                odds_visitantes.append(float(odd_visitante.replace(',', '.')))
+                    games_ids.append(game_id)
+                    mandantes.append(mandante)
+                    visitantes.append(visitante)
+                    odds_mandantes.append(float(odd_mandante.replace(',', '.')))
+                    odds_empates.append(float(odd_empate.replace(',', '.')))
+                    odds_visitantes.append(float(odd_visitante.replace(',', '.')))
+                
             except NoSuchElementException:
                 break
     df = pd.DataFrame({
