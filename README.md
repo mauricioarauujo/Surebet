@@ -1,6 +1,6 @@
 # Surebet
 
-Projeto para procurar por surebets em diferentes casas de apostas. Para diferentes casas de apostas são retiradas as odds para determinadas partidas através de um web scraping. A partir destas diferentes odds é verificada a existência de uma "surebet" que é quando tais odds te garantem um retorno positivo indepedente do resultado.
+Projeto para procurar por surebets em diferentes casas de apostas. Para diferentes casas de apostas são retiradas as odds para determinadas partidas através de um web scraping. A partir destas diferentes odds é verificada a existência de uma "surebet" que é quando tais odds te garantem um retorno positivo independente do resultado.
 
 ### Setup
 
