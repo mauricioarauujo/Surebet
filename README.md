@@ -48,6 +48,6 @@ Os arquivos serão salvos localmente em suas devidas camadas (raw, output, etc.)
 
 Exemplo de output para a Serie A do Futebol Brasileiro:
 
-![image](https://user-images.githubusercontent.com/58861384/199051772-e82cbd5f-af6e-4ed6-b4d7-642fee4ac0a1.png)
+![image](https://user-images.githubusercontent.com/58861384/199152651-92f53bed-66d8-4bb1-bef9-5fec1dd4aba4.png)
 
 No campo "total_prob_value", quando há um valor menor que 1, confirmamos a existência de uma surebet. A partir disso avaliamos as outras colunas para saber como prosseguir com tal aposta.
