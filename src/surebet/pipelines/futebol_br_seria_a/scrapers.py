@@ -39,8 +39,6 @@ def get_betway_odds_br_serie_a():
                     mandante = clubs[0]
                     visitante = clubs[1]
 
-
-
                     games_ids.append(game_id)
                     mandantes.append(mandante)
                     visitantes.append(visitante)
